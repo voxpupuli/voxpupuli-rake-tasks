@@ -1,3 +1,5 @@
+# frozen_string_literal: true
+
 begin
   require 'voxpupuli/rubocop/rake'
 rescue LoadError
