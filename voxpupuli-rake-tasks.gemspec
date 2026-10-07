@@ -13,7 +13,7 @@ Gem::Specification.new do |s|
 
   s.required_ruby_version = '>= 3.2'
 
-  s.files = `git ls-files`.split("\n")
+  s.files = Dir["{bin,lib,spec}/**/*"] + %w[LICENSE Rakefile README.md]
 
   # for our changelog generator
   s.add_dependency 'faraday-retry', '~> 2.1'
